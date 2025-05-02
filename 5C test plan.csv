@@ -27,3 +27,5 @@ User can log in,Username/Password entered correctly,User logs into their account
 ,username/password does not match,user prompted that login details are incorrect,,i
 ,no username inputted,user prompted that username is missing,,i
 ,no password inputted,user prompted that password is missing,,i
+User can join multiple societies,Society name is clicked,User navigates to associetied society infomation page,,v 
+,Society join is clicked,User navigates to associeted society union page,,v 
