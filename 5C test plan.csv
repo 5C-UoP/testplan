@@ -1,5 +1,6 @@
 Requirement/Function,Test inputs,Expected outputs,Description,Valid/invalid
-User can create an event,Valid data in all fields,Event sucessfully created,,v 
+Flutter test,1+1,2,"Basic test to see if Flutter is running, part of Flutter defaul code",v
+User can create an event,Valid data in all fields,Event sucessfully created,,v
 ,Event set to recurr weekly,Event sucessfully created,Event would be in callender on the same weekday every week (e.g. 3pm Mon),v
 ,Event set to recurr monthly,Event sucessfully created,Event would be in callender on the same day every month (e.g. 3pm every 30th),v
 ,Create event without description,Event sucessfully created,Events do not need a description to be made,v
@@ -7,22 +8,20 @@ User can create an event,Valid data in all fields,Event sucessfully created,,v
 ,User not logged in,Event creation screen cannot be accessed,User has to be logged into an account with comittee role to create society,i
 ,User does not have committee role,Event creation screen cannot be accessed,User has to be logged into an account with comittee role to create society,i
 ,Input date in past (e.g. 01/01/23),Error message,Date must be in the future,i
-,Event title exceeded maximum length,User prompted to shorten title,Title must not exceed maximum length,i
-,Event description exceeds maxmim length,User prompted to shorten description,Description must not exceed maximum length,i
+,Event title exceeded maximum length,Error message,Title must not exceed maximum length,i
+,Event description exceeds maxmim length,Error message,Description must not exceed maximum length,i
 ,invalid text entered in time field,Error message,Event time must be 00:00 format,i
 ,invalid text entered in date field,Error message,Event date but be dd/mm/yy format,i
 ,Create on invalid date (e.g. 30th Feb),Error message,Events should not be able made on dates that do not exist,i
-,Create without assigning colour,User prompted to add colour,Events required to be assigned a colour,i
 ,Create without a date,User prompted to add date,Event requires a date,i
 ,Create without title, User prompted to add title,Event requires a name,i
 ,Create without location, User prompted to add location,Event requires a location,i
-,Event created at same time as existing ,Error message,Single society cannot have two events at the same date/time,i
 The calendar can show an event,Valid event entered,Event displayed in calender,event visible with title and correct colour,v
 ,No event on date,No event displayed in calender,square in calender remains blank,v
 ,Multiple events on the same day,Display changes to series of dots,"Multiple events lead to a change of UI, so both events can be seen",v
 ,Event has longer name than can be displayed,Title is shortened with elipses (...),Event title does not leak into other boxes,v
 ,Event clicked,Event infomation displayed,"Description, location, etc. shown for the event",v
-User can log in,Username/Password entered correctly,User logs into their account,,v 
+User can log in,Username/Password entered correctly,User logs into their account,,v
 ,username that does not exist,user prompted that username not recognised,,i
 ,username/password does not match,user prompted that login details are incorrect,,i
 ,no username inputted,user prompted that username is missing,,i
